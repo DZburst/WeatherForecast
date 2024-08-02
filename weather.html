@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecast Site</title>
+    <title>Nether Weather</title>
     <link rel="stylesheet" href="weather.css">
+    <!-- Add an icon for the webpage -->
+    <link rel="icon" type="image/xicon" href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png">
+    <!-- Add a Minecraft-like font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <h1>Nether Weather</h1>
-    <div>
+    <div id="main">
         <form>
             <input type="text" placeholder="Algiers">
             <button>Choose a location</button>
         </form>
-        <div>
-            <div>
+        <div id="days">
+            <div class="day" id="d-1">
                 <h3>Yesterday</h3>
                 <deg>25°C</deg>
                 <weather>⛅</weather>
                 <hum>Humidity : 13%</hum>
             </div>
-            <div>
+            <div class="day" id="d-d">
                 <h3>Today</h3>
                 <deg>25°C</deg>
                 <weather>⛅</weather>
                 <hum>Humidity : 13%</hum>
             </div>
-            <div>
+            <div class="day" id="d+1">
                 <h3>Tomorrow</h3>
                 <deg>25°C</deg>
                 <weather>⛅</weather>
@@ -37,4 +44,5 @@
 
     <script src="weather.js"></script>
 </body>
+
 </html>
