@@ -62,11 +62,12 @@ h1 {
 }
 
 h3, .deg, .weather, .hum {
-    margin: 2.5vh 1vw;
+    margin: 2vh 1vw;
 }
 
-.weather {
-    font-size: 6vw;
+.weather img {
+    width: 11vw;
+    height: 22vh;
 }
 
 h3, .deg {
