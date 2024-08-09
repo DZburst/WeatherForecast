@@ -39,7 +39,7 @@ function requestWeather (){
 
         tdy_deg.innerHTML = `${deg_0}°C`;
         tdy_weather.src = `http://openweathermap.org/img/wn/${wth_0}@2x.png`;
-        tdy_hum.innerHTML = `${hum_0}%`;
+        tdy_hum.innerHTML = `Humidity: ${hum_0}%`;
 
         const tomorrow = data.list[8];
         const deg_1 = (tomorrow.main.temp - 273.15).toFixed(1);
@@ -48,7 +48,7 @@ function requestWeather (){
 
         tmrw_deg.innerHTML = `${deg_1}°C`;
         tmrw_weather.src = `http://openweathermap.org/img/wn/${wth_1}@2x.png`;
-        tmrw_hum.innerHTML = `${hum_1}%`;
+        tmrw_hum.innerHTML = `Humidity: ${hum_1}%`;
 
         const aft_tomorrow = data.list[16];
         const deg_2 = (aft_tomorrow.main.temp - 273.15).toFixed(1);
@@ -57,7 +57,7 @@ function requestWeather (){
 
         aft_tmrw_deg.innerHTML = `${deg_2}°C`;
         aft_tmrw_weather.src = `https://openweathermap.org/img/wn/${wth_2}@2x.png`;
-        aft_tmrw_hum.innerHTML = `${hum_2}%`;
+        aft_tmrw_hum.innerHTML = `Humidity: ${hum_2}%`;
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
